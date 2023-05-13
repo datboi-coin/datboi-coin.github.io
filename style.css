@@ -1,0 +1,381 @@
+:root{
+    /* Color */
+    --Primary: #FCEDD2;
+    --Primary-100: #F3D29A;
+    --Background: #FFFF53;
+    --Background-light: #F3DA58;
+    --Background-dark: #F3CE39;
+    --Background-mood: #DEAD45;
+    --Primary-gradient: linear-gradient(180deg, #EFE4FC 0%, rgba(239, 228, 252, 0) 100%);
+    --Primary-gradient-rev:linear-gradient(180deg, rgba(239, 228, 252, 0) 0%, #EFE4FC 100%);
+    --Secondary-dark:#A200DB;
+    --Secondary:#D600E9;
+    --Secondary-light:#E988F1;
+    --Secondary-extra-light: #FAE3FB;
+    --Danger-dark:#B10068;
+    --Danger:#EE008D;
+    --Danger-light:#F183BE;
+    --Danger-extra-light:#FBE1EF;
+    --Warning-dark:#E5410F;
+    --Warning:#EE5F14;
+    --Warning-light:#FF8E1F;
+    --Warning-extra-light: #FFF2E0;
+    --Success-dark:#08B226;
+    --Success:#90F138;
+    --Success-light:#C6F894;
+    --Success-extra-light:#F2FEE5;
+    --Gray-800:#262626;
+    --Gray-700:#434343;
+    --Gray-600:#555555;
+    --Gray-500:#7B7B7B;
+    --Gray-400:#9D9D9D;
+    --Gray-300:#C4C4C4;
+    --Gray-200:#D9D9D9;
+    --Gray-100:#E9E9E9;
+    --white:#FFFFFF;
+    --animate-duration: 2s;
+}
+
+body {
+    padding: 0;
+    background-color: var(--Background) !important;
+}
+
+h1, h2, h3, h4, p {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+p {
+    font-weight: 500 !important;
+    line-height: 1.75rem !important;
+}
+
+h1 {
+    font-size: 4rem !important;
+    font-weight: 700 !important;
+    line-height: 3.5rem !important;
+    text-shadow:
+    -2px -2px 0 white,
+    2px -2px 0 white,
+    -2px 2px 0 white,
+    2px 2px 0 white;
+}
+
+.heroLanding1 {
+    background: conic-gradient(
+        from 0deg at 50% 50%,
+        var(--Background) 0deg,
+        var(--Background-light) 5deg,
+        var(--Background) 10deg,
+        var(--Background-dark) 10deg,
+        var(--Background-dark) 20deg,
+        var(--Background) 20deg,
+        var(--Background-light) 25deg,
+        var(--Background) 30deg,
+        var(--Background-dark) 30deg,
+        var(--Background-dark) 40deg,
+        var(--Background) 40deg,
+        var(--Background-light) 45deg,
+        var(--Background) 50deg,
+        var(--Background-dark) 50deg,
+        var(--Background-dark) 60deg,
+        var(--Background) 60deg,
+        var(--Background-light) 65deg,
+        var(--Background) 70deg,
+        var(--Background-dark) 70deg,
+        var(--Background-dark) 80deg,
+        var(--Background) 80deg,
+        var(--Background-light) 85deg,
+        var(--Background) 90deg,
+        var(--Background-dark) 90deg,
+        var(--Background-dark) 100deg,
+        var(--Background) 100deg,
+        var(--Background-light) 105deg,
+        var(--Background) 110deg,
+        var(--Background-dark) 110deg,
+        var(--Background-dark) 120deg,
+        var(--Background) 120deg,
+        var(--Background-light) 125deg,
+        var(--Background) 130deg,
+        var(--Background-dark) 130deg,
+        var(--Background-dark) 140deg,
+        var(--Background) 140deg,
+        var(--Background-light) 145deg,
+        var(--Background) 150deg,
+        var(--Background-dark) 150deg,
+        var(--Background-dark) 160deg,
+        var(--Background) 160deg,
+        var(--Background-light) 165deg,
+        var(--Background) 170deg,
+        var(--Background-dark) 170deg,
+        var(--Background-dark) 180deg,
+        var(--Background) 180deg,
+        var(--Background-light) 185deg,
+        var(--Background) 190deg,
+        var(--Background-dark) 190deg,
+        var(--Background-dark) 200deg,
+        var(--Background) 200deg,
+        var(--Background-light) 205deg,
+        var(--Background) 210deg,
+        var(--Background-dark) 210deg,
+        var(--Background-dark) 220deg,
+        var(--Background) 220deg,
+        var(--Background-light) 225deg,
+        var(--Background) 230deg,
+        var(--Background-dark) 230deg,
+        var(--Background-dark) 240deg,
+        var(--Background) 240deg,
+        var(--Background-light) 245deg,
+        var(--Background) 250deg,
+        var(--Background-dark) 250deg,
+        var(--Background-dark) 260deg,
+        var(--Background) 260deg,
+        var(--Background-light) 265deg,
+        var(--Background) 270deg,
+        var(--Background-dark) 270deg,
+        var(--Background-dark) 280deg,
+        var(--Background) 280deg,
+        var(--Background-light) 285deg,
+        var(--Background) 290deg,
+        var(--Background-dark) 290deg,
+        var(--Background-dark) 300deg,
+        var(--Background) 300deg,
+        var(--Background-light) 305deg,
+        var(--Background) 310deg,
+        var(--Background-dark) 310deg,
+        var(--Background-dark) 320deg,
+        var(--Background) 320deg,
+        var(--Background-light) 325deg,
+        var(--Background) 330deg,
+        var(--Background-dark) 330deg,
+        var(--Background-dark) 340deg,
+        var(--Background) 340deg,
+        var(--Background-light) 345deg,
+        var(--Background) 350deg,
+        var(--Background-dark) 350deg,
+        var(--Background-dark) 360deg
+      );
+      
+    height: 120vh;
+}
+
+.heroLanding2 {
+    background:
+        radial-gradient(50% 50% at 50% 50%, #ffffffbe 0%, rgba(255, 255, 255, 0) 40%),
+        conic-gradient(
+            from 0deg at 50% 50%,
+            var(--Background) 0deg,
+            var(--Background) 10deg,
+            var(--Background-dark) 10deg,
+            var(--Background-dark) 20deg,
+            var(--Background) 20deg,
+            var(--Background) 30deg,
+            var(--Background-dark) 30deg,
+            var(--Background-dark) 40deg,
+            var(--Background) 40deg,
+            var(--Background) 50deg,
+            var(--Background-dark) 50deg,
+            var(--Background-dark) 60deg,
+            var(--Background) 60deg,
+            var(--Background) 70deg,
+            var(--Background-dark) 70deg,
+            var(--Background-dark) 80deg,
+            var(--Background) 80deg,
+            var(--Background) 90deg,
+            var(--Background-dark) 90deg,
+            var(--Background-dark) 100deg,
+            var(--Background) 100deg,
+            var(--Background) 110deg,
+            var(--Background-dark) 110deg,
+            var(--Background-dark) 120deg,
+            var(--Background) 120deg,
+            var(--Background) 130deg,
+            var(--Background-dark) 130deg,
+            var(--Background-dark) 140deg,
+            var(--Background) 140deg,
+            var(--Background) 150deg,
+            var(--Background-dark) 150deg,
+            var(--Background-dark) 160deg,
+            var(--Background) 160deg,
+            var(--Background) 170deg,
+            var(--Background-dark) 170deg,
+            var(--Background-dark) 180deg,
+            var(--Background) 180deg,
+            var(--Background) 190deg,
+            var(--Background-dark) 190deg,
+            var(--Background-dark) 200deg,
+            var(--Background) 200deg,
+            var(--Background) 210deg,
+            var(--Background-dark) 210deg,
+            var(--Background-dark) 220deg,
+            var(--Background) 220deg,
+            var(--Background) 230deg,
+            var(--Background-dark) 230deg,
+            var(--Background-dark) 240deg,
+            var(--Background) 240deg,
+            var(--Background) 250deg,
+            var(--Background-dark) 250deg,
+            var(--Background-dark) 260deg,
+            var(--Background) 260deg,
+            var(--Background) 270deg,
+            var(--Background-dark) 270deg,
+            var(--Background-dark) 280deg,
+            var(--Background) 280deg,
+            var(--Background) 290deg,
+            var(--Background-dark) 290deg,
+            var(--Background-dark) 300deg,
+            var(--Background) 300deg,
+            var(--Background) 310deg,
+            var(--Background-dark) 310deg,
+            var(--Background-dark) 320deg,
+            var(--Background) 320deg,
+            var(--Background) 330deg,
+            var(--Background-dark) 330deg,
+            var(--Background-dark) 340deg,
+            var(--Background) 340deg,
+            var(--Background) 350deg,
+            var(--Background-dark) 350deg,
+            var(--Background-dark) 360deg)
+      ;
+      
+    height: 120vh;
+}
+
+.tagLine {
+    padding-top: 12vh;
+    align-items: center !important;
+    height: 70%;
+}
+
+.animate__animated .animate__lightSpeedInLeft {
+    animation-iteration-count: infinite;
+}
+
+.ohShitWurdup {
+    position:absolute;
+    top: 36vh;
+    transform: scale(1.3);
+}
+
+@keyframes pepe-moves {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+        transform: translateY(25%);
+    }
+}
+
+@media (max-width: 576px) {
+    .ohShitWurdup {
+        transform: scale(4);
+    }
+}
+
+.BOI {
+    font-weight: 900;
+    animation: color-change 2s infinite;
+    text-decoration: underline;
+}
+
+@keyframes color-change {
+  0% {
+    color: green;
+  }
+  25% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: black;
+  }
+}
+
+.icon-button {
+    position: relative;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .icon-button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #997018;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+.icon-button:hover::after {
+    transform: scaleX(1);
+} */
+
+.icon {
+    max-width: 2rem;
+    max-height: auto;
+}
+
+
+.iconFrame {
+    background-color: var(--Background);
+    max-width: fit-content !important;
+    border-radius: 16px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.20);
+}
+
+.divider {
+    width: 33px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.dividerLine {
+    width: 1px;
+    border: 1px solid var(--Gray-500);
+}
+
+a[data-tool-tip] {
+    position: relative;
+}
+
+a[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    align-self: center;
+    background-color: var(--white) !important;
+    color: var(--Gray-600) !important;
+    padding: 4px 10px;
+    margin: 0;
+    white-space: nowrap;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(0);
+    transition: bottom ease-in 0.15s, transform ease-in 0.15s;
+}
+
+a[data-tool-tip]:hover::after {
+    transform: scale(1);
+    bottom: 150%;
+}
+
+.audioSource {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+}

@@ -1,93 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>DAT BOIIIIIIIIIIIIIIIIIIIIIIIII</title>
-    <style>
-		body {
-			background-color: yellow;
-			display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-		}
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="DatBoiCoin" content="width=device-width, initial-scale=1">
 
-		.sunshine {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: -1;
-		}
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
-		.ray {
-			fill: yellow;
-			animation: shine 5s infinite;
-		}
-		
-		h1 {
-			color: black;
-		}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
 
-        img {
-            width: 400px;
-        }
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-        a {
-            color: lime;
-            text-decoration: none;
-			font-size: 24px;
-            margin: 5px;
-        }
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;900&display=swap" rel="stylesheet">
 
-        a:hover {
-            color: white;
-        }
-		
-		.disclaimer {
-            max-width: 400px;
-            color: black;
-            text-align: center;
-            margin-top: 20px;
-            font-size: 10px;
-		}
+    <!-- Title -->
+    <title>Dat Boi Coin</title>
 
-		@keyframes shine {
-			0% { fill: #ffff99; }  /* light yellow */
-			50% { fill: #fcaf17; } /* darker yellow */
-			100% { fill: #ffff99; } /* light yellow */
-		}
-    </style>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+
+    <!-- Datboi animation -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
-	<div style="padding-top: 40px">
-		<h1>O shid whaddup</h1>
-		<h1>...here comes dat $BOI!</h1>
-	</div>
-    <img src="https://i.imgur.com/TahiLwM.gif" alt="DATBOI">
-    <p></p>
-	<div>
-        <a href="https://twitter.com/datboi-coin">Twitter</a>
-        <a href="link_2_url">Contract</a>
-        <a href="link_3_url">Telegram</a>
-        <a href="link_4_url">Chart</a>
-    </div>
-	<p class="disclaimer">
-        *$BOI is a new meme token. $BOI has no defined utility; its value may be derived only from the continued willingness of market participants to demand and trade the token, which may result in the potential for permanent and total loss of value should participants choose to no longer demand or trade $BOI. The token may also be subject to extreme price volatility, in particular if large, concentrated holdings of $BOI are liquidated in a short period of time. By trading $BOI, you acknowledge that you have read this risk disclosure and understand the risks associated with trading $BOI.
-	</p>
-	<div class="sunshine">
-	  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-		<polygon points="50,50 75,0 100,0" class="ray"></polygon>
-		<polygon points="50,50 100,0 100,25" class="ray"></polygon>
-		<polygon points="50,50 100,100 75,100" class="ray"></polygon>
-		<polygon points="50,50 100,100 100,75" class="ray"></polygon>
-		<polygon points="50,50 0,100 25,100" class="ray"></polygon>
-		<polygon points="50,50 0,100 0,75" class="ray"></polygon>
-		<polygon points="50,50 0,0 25,0" class="ray"></polygon>
-		<polygon points="50,50 0,0 0,25" class="ray"></polygon>
-	  </svg>
-	</div>
+    <Section class="d-flex flex-column">
+        <div class="heroLanding2">
+            <div class="audioSource">
+                <audio id="audioControl" autoplay controls>
+                    <source src="./assets/AUDIO_2Pac vs Thomas The Tank Engine.mp3" type="audio/mpeg">
+                  </audio>
+                  <!-- <button onclick="playAudio()">Play</button>     
+                  <button onclick="pauseAudio()">Pause</button>      -->
+            </div>
+            <div class="tagLine d-flex flex-column justify-content-between">
+                <h1>Here come dat <span class="BOI">$BOI</span></h1>
+                <div class="ohShitWurdup">
+                    <div class="animate__animated animate__shakeX animate__slower animate__delay-2s animate__infinite">
+                        <img src="./assets/ezgif.com-gif-maker.gif" alt="Here comes dat boi" class="datBoi">
+                    </div>
+                </div>
+                <h1>O shit whaddup!</h1>
+            </div>
+            <div class="iconFrame d-flex flex-row justify-content-center my-5 container px-5 py-3">
+                <a class="icon-button" href="" target="_blank" data-tool-tip="Dextools: Comming soon">
+                    <img src="./assets/LOGO_DEXTOOLS.png" alt="Dextools" class="icon">
+                </a>
+                <a class="icon-button" href="" target="_blank" data-tool-tip="EtherScan: Coming soon">
+                    <img src="./assets/LOGO_ETHERSCAN.png" alt="EtherScan" class="icon">
+                </a>
+                <a class="icon-button" href="" target="_blank" data-tool-tip="Uniswap: Coming soon">
+                    <img src="./assets/LOGO_UNISWAP.png" alt="Uniswap" class="icon">
+                </a>
+                <div class="divider"><span class="dividerLine"></span></div>
+                <a class="icon-button" href="" target="_blank" data-tool-tip="Telegram: Coming soon">
+                    <img src="./assets/LOGO_Telegram.png" alt="Telegram" class="icon">
+                </a>
+                <a class="icon-button" href="" target="_blank" data-tool-tip="Twitter: Coming soon">
+                    <img src="./assets/LOGO_TWITTER.png" alt="Twitter" class="icon">
+                </a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mx-5 my-5 ">
+            <div class="content col-10 col-lg-8 px-5 py-5">
+                <p>*$BOI is a new meme token. $BOI has no defined utility; its value may be derived only from the continued willingness of market participants to demand and trade the token, which may result in the potential for permanent and total loss of value should participants choose to no longer demand or trade $BOI. The token may also be subject to extreme price volatility, in particular if large, concentrated holdings of $BOI are liquidated in a short period of time. By trading $BOI, you acknowledge that you have read this risk disclosure and understand the risks associated with trading $BOI. - small af legal notice
+                </p>
+            </div>
+        </div>
+    </Section>
+        <!-- Core theme JS-->
+        <script src="scripts.js"></script>
 </body>
 </html>
