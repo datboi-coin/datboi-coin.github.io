@@ -4,7 +4,7 @@
 	<title>DAT BOIIIIIIIIIIIIIIIIIIIIIIIII</title>
     <style>
         body {
-            background-color: black;
+            background-color: yellow;
             color: white;
             display: flex;
             flex-direction: column;
@@ -40,6 +40,26 @@
             margin-top: 20px;
             font-size: 14px;
 		}
+		
+		.sunshine {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+
+		.ray {
+			fill: yellow;
+			animation: shine 5s infinite;
+		}
+
+		@keyframes shine {
+			0% { fill: #ffff99; }  /* light yellow */
+			50% { fill: #fcaf17; } /* darker yellow */
+			100% { fill: #ffff99; } /* light yellow */
+		}
     </style>
 </head>
 <body>
@@ -57,12 +77,17 @@
         *$BOI is a new meme token. $BOI has no defined utility; its value may be derived only from the continued willingness of market participants to demand and trade the token, which may result in the potential for permanent and total loss of value should participants choose to no longer demand or trade $BOI. The token may also be subject to extreme price volatility, in particular if large, concentrated holdings of $BOI are liquidated in a short period of time. By trading $BOI, you acknowledge that you have read this risk disclosure and understand the risks associated with trading $BOI.
 	</p>
 	<div class="sunshine">
-	<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <polygon points="50,50 100,0 100,100" class="ray"></polygon>
-    <polygon points="50,50 0,0 0,100" class="ray"></polygon>
-    <!-- Repeat the above line 23 more times, adjusting the points for each ray -->
-  </svg>
-</div>
+	  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+		<polygon points="50,50 100,0 100,100" class="ray"></polygon>
+		<polygon points="50,50 100,100 0,100" class="ray"></polygon>
+		<polygon points="50,50 0,100 0,0" class="ray"></polygon>
+		<polygon points="50,50 0,0 100,0" class="ray"></polygon>
+		<polygon points="50,50 100,50 75,0" class="ray"></polygon>
+		<polygon points="50,50 100,50 75,100" class="ray"></polygon>
+		<polygon points="50,50 0,50 25,0" class="ray"></polygon>
+		<polygon points="50,50 0,50 25,100" class="ray"></polygon>
+	  </svg>
+	</div>
 
 </body>
 </html>
