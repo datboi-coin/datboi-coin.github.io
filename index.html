@@ -3,17 +3,16 @@
 <head>
 	<title>DAT BOIIIIIIIIIIIIIIIIIIIIIIIII</title>
     <style>
-        body {
-            background-color: yellow;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+		body {
+			background-color: yellow;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			overflow: hidden;
+			position: relative;
+		}
 		
 		h1 {
 			color: white;
@@ -42,12 +41,11 @@
 		}
 		
 		.sunshine {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
+			position: absolute;
+			width: 200%; /* increased the size to cover the whole screen */
+			height: 200%; /* increased the size to cover the whole screen */
 			z-index: -1;
+			transform: translate(-50%, -50%); /* center the SVG */
 		}
 
 		.ray {
